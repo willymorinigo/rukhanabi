@@ -1,0 +1,6 @@
+{
+  "name": "Rukhá Nabí - Centro Terapéutico",
+  "description": "Espacio integral terapéutico para infancias y adolescentes en Villa Elisa. Terapia Ocupacional, Fonoaudiología, Psicología, Psicomotricidad, talleres lúdicos y admisiones 2028.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

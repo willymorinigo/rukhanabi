@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-coral: #e44b3a;
+  --color-brand-blue: #3a94c1;
+  --color-brand-yellow: #f7cb38;
+  --color-brand-green: #609c60;
+  --color-brand-cream: #fff6da;
+}
+
+@layer base {
+  :root {
+    --brand-coral: #e44b3a;
+    --brand-blue: #3a94c1;
+    --brand-yellow: #f7cb38;
+    --brand-green: #609c60;
+    --brand-cream: #fff6da;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #293229;
+    background-color: #fff6da;
+  }
+
+  body {
+    background-color: #fff6da;
+    color: #293229;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+::selection {
+  background-color: #f7cb38;
+  color: #293229;
+}

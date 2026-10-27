@@ -1,0 +1,22 @@
+{
+  "name": "Rukhá Nabí - Centro Terapéutico",
+  "short_name": "Rukhá Nabí",
+  "description": "Centro de Atención Integral de Neurodesarrollo Infantojuvenil en Villa Elisa. Terapia Ocupacional, Fonoaudiología, Psicología, Kinesiología y talleres lúdicos.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff6da",
+  "theme_color": "#e44b3a",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
