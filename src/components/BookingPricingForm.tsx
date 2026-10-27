@@ -59,23 +59,23 @@ export const BookingPricingForm: React.FC<BookingPricingFormProps> = ({
       : 'Por definir en entrevista inicial';
 
     const lines = [
-      `👋 *CONSULTA DE TURNOS Y SESIONES - RUKHÁ NABÍ*`,
-      `📍 *Sede:* ${CLINIC_INFO.location}`,
-      parentName ? `👤 *Adulto responsable:* ${parentName}` : '',
-      childName ? `👶 *Niño/a o joven:* ${childName} (${childAge || 'edad no especificada'})` : '',
-      phone ? `📞 *Teléfono de contacto:* ${phone}` : '',
-      `🎯 *Disciplinas / Talleres de interés:* ${activitiesStr}`,
-      `💳 *Modalidad de atención:* ${
+      `\u{1F44B} *CONSULTA DE TURNOS Y SESIONES - RUKHÁ NABÍ*`,
+      `\u{1F4CD} *Sede:* ${CLINIC_INFO.location}`,
+      parentName ? `\u{1F464} *Adulto responsable:* ${parentName}` : '',
+      childName ? `\u{1F476} *Niño/a o joven:* ${childName} (${childAge || 'edad no especificada'})` : '',
+      phone ? `\u{1F4DE} *Teléfono de contacto:* ${phone}` : '',
+      `\u{1F3AF} *Disciplinas / Talleres de interés:* ${activitiesStr}`,
+      `\u{1F4B3} *Modalidad de atención:* ${
         coverageType === 'obra-social'
           ? `Obra Social / Prepaga (${healthProvider || 'A detallar'} · CUD: ${hasCud})`
           : coverageType === 'particular'
           ? 'Atención Particular / Sesiones privadas'
           : 'Consulta mixta (Obra Social / Particular)'
       }`,
-      `⏰ *Franja horaria preferida:* ${
+      `\u{23F0} *Franja horaria preferida:* ${
         preferredShift === 'manana' ? 'Turno Mañana' : preferredShift === 'tarde' ? 'Turno Tarde' : 'Indistinto / A coordinar'
       }`,
-      customMessage ? `\n💬 *Mensaje / Motivo de consulta:*\n${customMessage}` : ''
+      customMessage ? `\n\u{1F4AC} *Mensaje / Motivo de consulta:*\n${customMessage}` : ''
     ].filter(Boolean);
 
     return lines.join('\n');

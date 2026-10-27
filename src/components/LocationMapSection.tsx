@@ -100,7 +100,7 @@ export const LocationMapSection: React.FC = () => {
                     {CLINIC_INFO.phoneDisplay}
                   </p>
                   <a
-                    href={formatWhatsAppUrl('¡Hola equipo de Rukhá Nabí! 👋 Quisiera solicitar información sobre turnos y consultas para el espacio. Muchas gracias!')}
+                    href={formatWhatsAppUrl('¡Hola equipo de Rukhá Nabí! \u{1F44B} Quisiera solicitar información sobre turnos y consultas para el espacio. Muchas gracias!')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-xs font-bold text-[#609c60] hover:underline mt-1"

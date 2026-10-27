@@ -27,8 +27,12 @@ export const CLINIC_INFO = {
 };
 
 export const formatWhatsAppUrl = (text: string, phone: string = CLINIC_INFO.phone): string => {
-  // Clean variation selectors (\uFE0F) that can cause corrupted glyphs in WhatsApp Web/Android
-  const cleanText = text.replace(/\uFE0F/g, '').trim();
+  // Clean replacement chars (\uFFFD), variation selectors (\uFE0F), and zero-width spaces (\u200B)
+  const cleanText = text
+    .replace(/\uFFFD/g, '')
+    .replace(/\uFE0F/g, '')
+    .replace(/\u200B/g, '')
+    .trim();
   return `https://wa.me/549${phone}?text=${encodeURIComponent(cleanText)}`;
 };
 
@@ -293,27 +297,27 @@ export const QUICK_MESSAGES: QuickMessage[] = [
   {
     id: 'admision',
     title: 'Solicitar Entrevista Inicial',
-    text: '¡Hola equipo de Rukhá Nabí! 👋 Quisiera solicitar información sobre turnos disponibles y coordinar una entrevista inicial para el espacio. Muchas gracias!'
+    text: '¡Hola equipo de Rukhá Nabí! \u{1F44B} Quisiera solicitar información sobre turnos disponibles y coordinar una entrevista inicial para el espacio. Muchas gracias!'
   },
   {
     id: 'obras-sociales-2028',
     title: 'Admisión / Obra Social',
-    text: '¡Hola equipo de Rukhá Nabí! 👋 Les escribo para consultar sobre el proceso de admisión y la presentación de documentación para Obra Social / Prepaga. Muchas gracias!'
+    text: '¡Hola equipo de Rukhá Nabí! \u{1F44B} Les escribo para consultar sobre el proceso de admisión y la presentación de documentación para Obra Social / Prepaga. Muchas gracias!'
   },
   {
     id: 'precios-particular',
     title: 'Modalidad Particular',
-    text: '¡Hola equipo de Rukhá Nabí! 👋 Quisiera consultar por la modalidad, horarios y valores de las sesiones particulares y talleres. Muchas gracias!'
+    text: '¡Hola equipo de Rukhá Nabí! \u{1F44B} Quisiera consultar por la modalidad, horarios y valores de las sesiones particulares y talleres. Muchas gracias!'
   },
   {
     id: 'talleres-ludicos',
     title: 'Consultar por Talleres',
-    text: '¡Hola equipo de Rukhá Nabí! 👋 Me gustaría recibir información sobre la disponibilidad de cupos y horarios para los talleres lúdicos y de habilidades sociales. Muchas gracias!'
+    text: '¡Hola equipo de Rukhá Nabí! \u{1F44B} Me gustaría recibir información sobre la disponibilidad de cupos y horarios para los talleres lúdicos y de habilidades sociales. Muchas gracias!'
   },
   {
     id: 'evaluacion-neuro',
     title: 'Evaluaciones Diagnósticas',
-    text: '¡Hola equipo de Rukhá Nabí! 👋 Quisiera solicitar información sobre el circuito de evaluaciones de neurodesarrollo e informes interdisciplinarios. Muchas gracias!'
+    text: '¡Hola equipo de Rukhá Nabí! \u{1F44B} Quisiera solicitar información sobre el circuito de evaluaciones de neurodesarrollo e informes interdisciplinarios. Muchas gracias!'
   }
 ];
 

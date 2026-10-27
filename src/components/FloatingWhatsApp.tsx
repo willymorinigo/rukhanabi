@@ -6,7 +6,7 @@ export const FloatingWhatsApp: React.FC = () => {
   const [showTooltip, setShowTooltip] = useState(true);
 
   const whatsappUrl = formatWhatsAppUrl(
-    '¡Hola equipo de Rukhá Nabí! 👋 Quisiera solicitar información sobre turnos y consultas para el espacio. Muchas gracias!'
+    '¡Hola equipo de Rukhá Nabí! \u{1F44B} Quisiera solicitar información sobre turnos y consultas para el espacio. Muchas gracias!'
   );
 
   return (
