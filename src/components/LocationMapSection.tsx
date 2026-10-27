@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CLINIC_INFO } from '../data/therapeuticData';
+import { CLINIC_INFO, formatWhatsAppUrl } from '../data/therapeuticData';
 import { MapPin, Navigation, Phone, ExternalLink, Instagram, Facebook, Clock, Car, Bus, Copy, Check, Map } from 'lucide-react';
 
 export const LocationMapSection: React.FC = () => {
@@ -100,7 +100,7 @@ export const LocationMapSection: React.FC = () => {
                     {CLINIC_INFO.phoneDisplay}
                   </p>
                   <a
-                    href={`https://wa.me/549${CLINIC_INFO.phone}?text=${encodeURIComponent('¡Hola equipo de Rukhá Nabí! 👋 Quisiera solicitar información sobre turnos y consultas para el espacio. Muchas gracias!')}`}
+                    href={formatWhatsAppUrl('¡Hola equipo de Rukhá Nabí! 👋 Quisiera solicitar información sobre turnos y consultas para el espacio. Muchas gracias!')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-xs font-bold text-[#609c60] hover:underline mt-1"

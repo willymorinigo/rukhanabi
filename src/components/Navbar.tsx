@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { CLINIC_INFO } from '../data/therapeuticData';
+import { CLINIC_INFO, formatWhatsAppUrl } from '../data/therapeuticData';
 import { MessageCircle, Menu, X } from 'lucide-react';
 import logo from '@/assets/logos/logo.svg';
 
@@ -162,7 +162,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               <span>AGENDAR SESIÓN / CONSULTAS</span>
             </button>
             <a
-              href={`https://wa.me/549${CLINIC_INFO.phone}?text=${encodeURIComponent('¡Hola equipo de Rukhá Nabí! 👋 Quisiera solicitar información sobre turnos y consultas para el espacio. Muchas gracias!')}`}
+              href={formatWhatsAppUrl('¡Hola equipo de Rukhá Nabí! 👋 Quisiera solicitar información sobre turnos y consultas para el espacio. Muchas gracias!')}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-2 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-[#1f4e1f] bg-[#eef7ee] border border-[#a8d3a8] rounded-xl hover:bg-[#dff0df] transition-colors"

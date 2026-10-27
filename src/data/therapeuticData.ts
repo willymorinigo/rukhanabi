@@ -26,6 +26,12 @@ export const CLINIC_INFO = {
   hours: 'Lunes a Viernes de 08:30 a 19:30 hs · Sábados con turnos programados',
 };
 
+export const formatWhatsAppUrl = (text: string, phone: string = CLINIC_INFO.phone): string => {
+  // Clean variation selectors (\uFE0F) that can cause corrupted glyphs in WhatsApp Web/Android
+  const cleanText = text.replace(/\uFE0F/g, '').trim();
+  return `https://wa.me/549${phone}?text=${encodeURIComponent(cleanText)}`;
+};
+
 export const DISCIPLINES: Discipline[] = [
   {
     id: 'psicologia',

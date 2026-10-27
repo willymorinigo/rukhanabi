@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { CLINIC_INFO, DISCIPLINES, WORKSHOPS, QUICK_MESSAGES } from '../data/therapeuticData';
+import { CLINIC_INFO, DISCIPLINES, WORKSHOPS, QUICK_MESSAGES, formatWhatsAppUrl } from '../data/therapeuticData';
 import { MessageSquare, Send, CheckCircle2, Copy, AlertCircle, MapPin, HeartPulse, Palette } from 'lucide-react';
 
 interface BookingPricingFormProps {
@@ -84,8 +84,7 @@ export const BookingPricingForm: React.FC<BookingPricingFormProps> = ({
   const handleSendWhatsApp = (e: React.FormEvent) => {
     e.preventDefault();
     const message = buildWhatsAppText();
-    const encoded = encodeURIComponent(message);
-    const url = `https://wa.me/549${CLINIC_INFO.phone}?text=${encoded}`;
+    const url = formatWhatsAppUrl(message);
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
@@ -156,7 +155,7 @@ export const BookingPricingForm: React.FC<BookingPricingFormProps> = ({
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <a
-                href={`https://wa.me/549${CLINIC_INFO.phone}?text=${encodeURIComponent(buildWhatsAppText())}`}
+                href={formatWhatsAppUrl(buildWhatsAppText())}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-white bg-[#609c60] hover:bg-[#4e844e] rounded-xl transition-colors shadow-sm"

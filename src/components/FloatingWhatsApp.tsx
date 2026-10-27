@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { CLINIC_INFO } from '../data/therapeuticData';
+import { CLINIC_INFO, formatWhatsAppUrl } from '../data/therapeuticData';
 import { MessageSquare, X } from 'lucide-react';
 
 export const FloatingWhatsApp: React.FC = () => {
   const [showTooltip, setShowTooltip] = useState(true);
 
-  const whatsappUrl = `https://wa.me/549${CLINIC_INFO.phone}?text=${encodeURIComponent(
+  const whatsappUrl = formatWhatsAppUrl(
     '¡Hola equipo de Rukhá Nabí! 👋 Quisiera solicitar información sobre turnos y consultas para el espacio. Muchas gracias!'
-  )}`;
+  );
 
   return (
     <aside aria-label="Contacto rápido" className="fixed bottom-18 lg:bottom-5 right-4 sm:right-5 z-40 flex flex-col items-end gap-2">
