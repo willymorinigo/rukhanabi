@@ -287,27 +287,27 @@ export const QUICK_MESSAGES: QuickMessage[] = [
   {
     id: 'admision',
     title: 'Solicitar Entrevista Inicial',
-    text: 'Hola Rukha Nabi! Quiero consulta'
+    text: '¡Hola equipo de Rukhá Nabí! 👋 Quisiera solicitar información sobre turnos disponibles y coordinar una entrevista inicial para el espacio. Muchas gracias!'
   },
   {
     id: 'obras-sociales-2028',
-    title: 'Admisión 2028 / Obra Social',
-    text: 'Hola! Les escribo para solicitar el instructivo y documentación para autorizaciones de Obra Social para el período 2028.'
+    title: 'Admisión / Obra Social',
+    text: '¡Hola equipo de Rukhá Nabí! 👋 Les escribo para consultar sobre el proceso de admisión y la presentación de documentación para Obra Social / Prepaga. Muchas gracias!'
   },
   {
     id: 'precios-particular',
-    title: 'Modalidad y Sesiones Particulares',
-    text: 'Hola! Quisiera consultar por la coordinación y modalidad de las sesiones particulares y talleres.'
+    title: 'Modalidad Particular',
+    text: '¡Hola equipo de Rukhá Nabí! 👋 Quisiera consultar por la modalidad, horarios y valores de las sesiones particulares y talleres. Muchas gracias!'
   },
   {
     id: 'talleres-ludicos',
     title: 'Consultar por Talleres',
-    text: 'Hola! Me interesaría conocer días, horarios y disponibilidad de los Talleres (Habilidades Sociales, Cerámica, Cocina, etc.).'
+    text: '¡Hola equipo de Rukhá Nabí! 👋 Me gustaría recibir información sobre la disponibilidad de cupos y horarios para los talleres lúdicos y de habilidades sociales. Muchas gracias!'
   },
   {
     id: 'evaluacion-neuro',
-    title: 'Evaluación de Neurodesarrollo',
-    text: 'Hola! Quisiera consultar por el circuito de Evaluaciones de Neurodesarrollo / Neurología Infantojuvenil.'
+    title: 'Evaluaciones Diagnósticas',
+    text: '¡Hola equipo de Rukhá Nabí! 👋 Quisiera solicitar información sobre el circuito de evaluaciones de neurodesarrollo e informes interdisciplinarios. Muchas gracias!'
   }
 ];
 

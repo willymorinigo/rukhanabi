@@ -6,7 +6,7 @@ export const FloatingWhatsApp: React.FC = () => {
   const [showTooltip, setShowTooltip] = useState(true);
 
   const whatsappUrl = `https://wa.me/549${CLINIC_INFO.phone}?text=${encodeURIComponent(
-    'Hola Rukhá Nabí! Quiero consulta'
+    '¡Hola equipo de Rukhá Nabí! 👋 Quisiera solicitar información sobre turnos y consultas para el espacio. Muchas gracias!'
   )}`;
 
   return (

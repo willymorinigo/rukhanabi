@@ -100,7 +100,7 @@ export const LocationMapSection: React.FC = () => {
                     {CLINIC_INFO.phoneDisplay}
                   </p>
                   <a
-                    href={`https://wa.me/549${CLINIC_INFO.phone}?text=${encodeURIComponent('Hola Rukha Nabi! Quiero consulta')}`}
+                    href={`https://wa.me/549${CLINIC_INFO.phone}?text=${encodeURIComponent('¡Hola equipo de Rukhá Nabí! 👋 Quisiera solicitar información sobre turnos y consultas para el espacio. Muchas gracias!')}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-xs font-bold text-[#609c60] hover:underline mt-1"
@@ -142,7 +142,7 @@ export const LocationMapSection: React.FC = () => {
             {/* Social Networks Section */}
             <div className="pt-6 border-t border-[#f0e4be] space-y-3">
               <p className="text-xs font-bold uppercase tracking-wider text-[#526352]">
-                Redes Oficiales de Rukha Nabi:
+                Redes Oficiales de Rukhá Nabí:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 <a
@@ -234,7 +234,7 @@ export const LocationMapSection: React.FC = () => {
                     <MapPin className="w-3.5 h-3.5" />
                   </div>
                   <p className="text-xs font-bold text-[#242e24]">
-                    RUKHA NABI
+                    RUKHÁ NABÍ
                   </p>
                 </div>
                 
