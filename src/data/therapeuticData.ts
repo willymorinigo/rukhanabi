@@ -1,4 +1,4 @@
-import { Discipline, Workshop, MethodologyStep, QuickMessage, Testimonial, GalleryItem } from '../types';
+import { Discipline, Workshop, MethodologyStep, QuickMessage, Testimonial } from '../types';
 
 export const CLINIC_INFO = {
   name: 'RUKHÁ NABÍ',
@@ -357,41 +357,6 @@ export const TESTIMONIALS: Testimonial[] = [
     therapy: 'Kinesiología y Musicoterapia',
     quote: 'Agradecemos enormemente que respeten los tiempos y deseos de Benja. No es un lugar rígido: todo pasa por el juego, la empatía y la alegría. Las instalaciones son súper luminosas y seguras.',
     date: 'Diciembre 2025'
-  }
-];
-
-export const GALLERY_ITEMS: GalleryItem[] = [
-  {
-    id: 'g1',
-    title: 'Sala Principal de Juego y Psicomotricidad',
-    category: 'Salas Terapéuticas',
-    description: 'Espacio diáfano con luz natural, hamaca sensorial de tela, mobiliario Montessori de madera de pino y recursos táctiles para el desarrollo integral.',
-    imageSrc: '/src/assets/images/hero_pediatric_therapy_1793107309026.jpg',
-    tag: 'Juego Libre y Vínculo'
-  },
-  {
-    id: 'g2',
-    title: 'Gimnasio de Integración Sensorial',
-    category: 'Integración Sensorial',
-    description: 'Equipamiento específico con bloques de escalada suaves, rampa de balance, pared táctil multivariada y columpio sensorial para la modulación de estímulos.',
-    imageSrc: '/src/assets/images/therapy_sensory_room_1793107309988.jpg',
-    tag: 'Regulación y Movimiento'
-  },
-  {
-    id: 'g3',
-    title: 'Mesa de Estimulación y Motricidad Fina',
-    category: 'Sesiones Individuales',
-    description: 'Trabajo personalizado donde a través de plastilina terapéutica, encastres de madera y juegos de ingenio se entrenan destrezas motoras y cognitivas.',
-    imageSrc: '/src/assets/images/therapy_play_session_1793107310947.jpg',
-    tag: 'Enfoque Singular'
-  },
-  {
-    id: 'g4',
-    title: 'Recepción y Espacio de Encuentro',
-    category: 'Instalaciones',
-    description: 'Entorno cálido y sereno para la llegada de las familias en Villa Elisa, mesa lúdica de bienvenida para los pequeños y sector administrativo para admisiones.',
-    imageSrc: '/src/assets/images/therapy_facility_garden_1793107309890.jpg',
-    tag: 'Calidez y Bienvenida'
   }
 ];
 
